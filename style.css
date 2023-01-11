@@ -28,11 +28,16 @@
 }
 
 .logo{
+margin-top: 10px;
 margin-left:15px;
 width:300px;
 height:50px;
 }
 
+.logo:hover{
+    transform: scale(1.025);
+    transition: 200ms transform ease-in-out;
+}
 .list{
     margin-left: auto;
  display: flex;
@@ -122,20 +127,15 @@ position:absolute;
 height: 484px;
 width: 480px;
 left:0;
-bottom:1px;
+bottom: 5px;
 
 z-index: -1;
 }
 
-.bg3{ 
-
-    position:absolute;
-    height: 498px;
-    width: 420px;
-    left:0;
-    bottom:1px;
-    z-index: -1;
-    }
+.image2{
+    width: 100%;
+    height: auto;
+}
 
 .news1{
     width:1263px;
@@ -149,7 +149,7 @@ z-index: -1;
 
  .top1  {
     width: 60%;
-    display: inline-flex;
+    display: inline-block;
     border-radius: 3px;
  }
 
@@ -502,12 +502,9 @@ border-radius:3px;
 }
 
 
-
 @media screen and (max-width: 1250px) {
 
-    .container .list {
-        display: none;
-      }
+   
       .bg {
         width:100%;
         height: auto;
@@ -576,10 +573,42 @@ font-size:20px ;}
     .socials{
         display:none
     }
+    .h1card{
+        width: 300px;
+    height: 310px;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    }
     .container2{
         display: none;
     }
+    .checkbtn{
+        font-size:30px;
+        color:black;
+        float: left;
+        line-height: 60px;
+        margin-right: 20px;
+        margin-left: 20px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .list{display: none;
+    }
+    .logo{
+        margin-top: 10px;
+        margin-left:15px;
+        width:250px;
+        height:50px;
+        }
 }
 
+@media screen and (min-width: 1251px) {
+.checkbtn{
 
+    display: none;
+}
 
+}
