@@ -60,6 +60,7 @@ height:50px;
 .container a:hover{
     text-decoration: none;
     color:#a7257c;
+    transition-duration: 0.5s;
 }
 
 .videocontainer{
@@ -238,8 +239,6 @@ font-weight: 700;
         font-weight: 100;
 
     }
-    
-
 
 
   .card3{
@@ -250,13 +249,19 @@ font-weight: 700;
         margin-right: 10px;
         margin-top: 200px;
     }
+    .imghov :hover{
+        transform: rotatey(180deg);
+        transition: 2s;
+        
+    
+    }
   .img3{
             height:480px;
             width:620px; 
             border-radius:3px;
+  }
 
-        
-    }
+
    .card3 h2{
     letter-spacing: 2px;
         margin-left: 5px;
